@@ -5,11 +5,16 @@
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link>
         </div>
-        <button  v-on:click="scrollActivated = !scrollActivated" type="button">Test</button>
-        <div v-if="isVisited">
-            <router-view />
-        </div>
+        <br/>
+        <br/>
+        <button v-on:click="scrollActivated = !scrollActivated" type="button">Test</button>
       </div>
+      <h1>Hello World</h1>
+
+
+     <div v-if="isVisited">
+     <router-view />
+     </div>
   </div>
 </template>
 
@@ -29,7 +34,6 @@ export default {
     }
   },
   beforeCreate: function() {
-    alert('test');
     document.body.className = 'not-scrollable';
   },
   methods: {
@@ -43,20 +47,17 @@ export default {
 <style>
 body.not-scrollable {
     overflow:hidden;
-    background-color: blue;
     margin: 0px;
 }
 
 body.scrollable {
     margin: 0px;
-    background-color: green;
 }
 
 .home-card {
-    position: sticky;
+    background-color: blue;
     height: 100vh;
     width: 100vw;
-    overflow:hidden;
 }
 
 .home-nav {
