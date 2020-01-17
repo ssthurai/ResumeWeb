@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <transition>
-      <div v-bind:class="{ homeCardFullHeight: isVisited, homeCard: !isVisited }">
+      <div class = "homeCardBackgroundImage"
+           v-bind:class="{ homeCardFullHeight: isVisited, homeCard: !isVisited }"
+           v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/bg-card.png') + ')' }"
+      >
         <div class="home-nav">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link>
@@ -64,14 +67,21 @@ body.scrollable {
   margin: 0px;
 }
 
+.homeCardBackgroundImage {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size: cover;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .homeCardFullHeight {
-  background-color: blue;
   height: 100vh;
   width: 100vw;
 }
 
 .homeCard {
-  background-color: blue;
   height: 65vh;
   width: 100vw;
 }
