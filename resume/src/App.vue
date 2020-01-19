@@ -135,11 +135,13 @@ body.scrollable {
 
 .homeCardFullHeight {
   height: 100vh;
+  transition: height 0.7s ease-in-out;
   width: 100vw;
 }
 
 .homeCard {
-  height: 65vh;
+  height: 45vh;
+  transition: height 0.7s ease-in-out;
   width: 100vw;
 }
 
