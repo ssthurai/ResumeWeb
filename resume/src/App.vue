@@ -1,164 +1,112 @@
 <template>
   <div id="app">
-    <transition>
-      <div
-        class="homeCardBackgroundImage"
-        v-bind:class="{ homeCardFullHeight: isVisited, homeCard: !isVisited }"
-        v-bind:style="{
-          backgroundImage: 'url(' + require('@/assets/images/bg-card.png') + ')'
-        }"
-      >
-        <div class="home-nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+    <div class="container-fluid m-0 p-0">
+      <div class="row justify-content-center text-center mx-auto">
+        <div class="col-lg-10 col-sm-12 col-md-12 m-0 p-0">
+          <ImageNavBar v-on:webVisited="showRouterView" />
+          <transition name="switchRouterView" mode="out-in">
+            <router-view v-if="isRouterView" />
+          </transition>
         </div>
-        <br />
-        <br />
-        <button
-          class="ml-3"
-          v-on:click="scrollActivated = !scrollActivated"
-          type="button"
-        >
-          Test scrollable
-        </button>
-        <button class="ml-3" v-on:click="isVisited = !isVisited" type="button">
-          Test Height
-        </button>
-        <button
-          class="ml-3"
-          v-on:click="isFaded = !isFaded"
-          type="button"
-        >
-          Test Fade
-        </button>
-        <button
-          class="ml-3"
-          v-on:click="isBounced = !isBounced"
-          type="button"
-        >
-          Test Bounce
-        </button>
-        <button
-          class="ml-3"
-          v-on:click="isRolled = !isRolled"
-          type="button"
-        >
-          Test Rolling
-        </button>
-        <button
-          class="ml-3"
-          v-on:click="isAnimatedCss = !isAnimatedCss"
-          type="button"
-        >
-          Test Animate CSS
-        </button>
       </div>
-    </transition>
-
-    <transition name="fade">
-      <h1 v-if="isFaded">Fading</h1>
-    </transition>
-
-    <transition name="bounce">
-      <h1 class="text-center" v-if="isBounced">Bouncing</h1>
-    </transition>
-
-    <transition name="roll">
-      <h1 class="test" v-if="isRolled">Rolling</h1>
-    </transition>
-
-    <transition enter-active-class="animated flipInY"
-                leave-active-class="animated zoomOutRight">
-      <h1 class="test" v-if="isAnimatedCss">Animation</h1>
-    </transition>
-
-    <div>
-      <transition mode="out-in"
-                  enter-active-class="animated fadeIn delay-1s"
-                  leave-active-class="animated zoomOutRight delay-1s">
-      <router-view />
-      </transition>
     </div>
-
+    <BottumNote v-if="isRouterView" />
   </div>
 </template>
 
 <script>
+import ImageNavBar from "@/components/ImageNavBar.vue";
+import BottumNote from "@/components/BottumNote.vue";
+
 export default {
   name: "App",
+  components: {
+    ImageNavBar,
+    BottumNote
+  },
   data: function() {
     return {
-      isVisited: false,
-      scrollActivated: false,
-      isFaded: false,
-      isBounced: false,
-      isRolled: false,
-      isAnimatedCss: false
+      isRouterView: false,
+      scrollActivated: false
     };
+  },
+  methods: {
+    showRouterView: function() {
+      this.isRouterView = true;
+      this.scrollActivated = true;
+    }
   },
   watch: {
     scrollActivated: function() {
-        document.body.className = this.scrollActivated
+      document.body.className = this.scrollActivated
         ? "scrollable"
         : "not-scrollable";
     }
   },
   beforeCreate: function() {
     document.body.className = "not-scrollable";
-  },
-  methods: {
-    testMethod: function() {
-      this.scrollActivated = !this.scrollActivated;
-    }
   }
 };
 </script>
 
 <style>
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #fbf1ea;
+}
+
 body.not-scrollable {
   overflow: hidden;
-  margin: 0px;
 }
 
 body.scrollable {
-  margin: 0px;
+  overflow: auto;
 }
 
-.homeCardBackgroundImage {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-size: cover;
-  /*background-size: contain;*/
-  background-repeat: no-repeat;
-  background-position: right;
+.switchRouterView-enter-active {
+  animation: swing-in-left-fwd 1s ease-in-out both;
 }
 
-.homeCardFullHeight {
-  height: 100vh;
-  transition: height 0.7s ease-in-out;
-  width: 100vw;
+.switchRouterView-leave-active {
+  animation: swing-out-right-bck 1s ease-in-out both;
+  /*cubic-bezier(0.600, -0.280, 0.735, 0.045)*/
 }
 
-.homeCard {
-  height: 45vh;
-  transition: height 0.7s ease-in-out;
-  width: 100vw;
+@keyframes swing-out-right-bck {
+  0% {
+    transform: rotateY(0);
+    transform-origin: right;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-100deg);
+    transform-origin: right;
+    opacity: 0;
+  }
 }
 
-.home-nav {
-  text-align: center;
-  padding: 30px;
+@keyframes swing-in-left-fwd {
+  0% {
+    transform: rotateY(100deg);
+    transform-origin: left;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    transform-origin: left;
+    opacity: 1;
+  }
 }
+</style>
 
-.home-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-.home-nav a.router-link-exact-active {
-  color: #42b983;
-}
-
+<!--
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 2.5s ease-out;
@@ -174,7 +122,7 @@ body.scrollable {
 }
 
 .bounce-leave-active {
-    animation: bounce-in 0.5s reverse;
+  animation: bounce-in 0.5s reverse;
 }
 
 @keyframes bounce-in {
@@ -190,11 +138,7 @@ body.scrollable {
 }
 
 .test {
-    transform-origin: 10% 10%;
-}
-
-.delay-1s {
-  animation-delay: 0.1s;
+  transform-origin: 10% 10%;
 }
 
 .roll-enter-active {
@@ -202,7 +146,7 @@ body.scrollable {
 }
 
 .roll-leave-active {
-    animation: rolling 2.5s reverse;
+  animation: rolling 2.5s reverse;
 }
 
 @keyframes rolling {
@@ -217,5 +161,4 @@ body.scrollable {
     transform: scale(1) rotateZ(360deg);
   }
 }
-
-</style>
+-->
