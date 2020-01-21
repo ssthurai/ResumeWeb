@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid p-0 mr-0 ml-0 mb-1 mt-1">
       <div class="row justify-content-center text-center mx-auto">
-        <div class="col-lg-10 col-sm-12 col-md-12 m-0 p-0">
+        <div class="main-container-style col-lg-10 col-sm-12 col-md-12 m-0 p-0">
           <ImageNavBar v-on:webVisited="showRouterView" />
           <transition name="switchRouterView" mode="out-in">
             <router-view v-if="isRouterView" />
           </transition>
+          <BottumNote v-if="isRouterView" />
         </div>
       </div>
     </div>
-    <BottumNote v-if="isRouterView" />
   </div>
 </template>
 
@@ -62,12 +62,17 @@ html {
   background-color: #fbf1ea;
 }
 
+.main-container-style {
+  border: 1px solid black;
+}
+
 body.not-scrollable {
   overflow: hidden;
 }
 
 body.scrollable {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .switchRouterView-enter-active {

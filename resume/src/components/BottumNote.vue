@@ -37,7 +37,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p>
+            <p style="text-align: left;">
               This Website is coded by Hsuan Ting, Yeh. Photo taken by
               <a href="#">Grace Lau</a>.
             </p>

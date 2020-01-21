@@ -4,7 +4,6 @@ import VueRouter from "vue-router";
 import AboutMe from "../views/AboutMe.vue";
 import Resume from "../views/Resume.vue";
 import Portfolio from "../views/Portfolio.vue";
-import Education from "../views/Education.vue";
 import Contact from "../views/Contact.vue";
 
 Vue.use(VueRouter);
@@ -24,11 +23,6 @@ const routes = [
     path: "/portfolio",
     name: "portfolio",
     component: Portfolio
-  },
-  {
-    path: "/education",
-    name: "education",
-    component: Education
   },
   {
     path: "/contact",

@@ -30,9 +30,9 @@ export default {
   background-color: transparent;
   border: none;
   color: white;
-  margin-left: 0.7em;
-  margin-right: 0.7em;
-  font-size: 0.4em;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
