@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="row justify-content-center text-left mx-auto">
+    <div class="row justify-content-center text-left ">
       <!-- About Me -->
       <div class="col-10 mt-5 mb-5">
         <h3><i class="far fa-smile-wink mr-2"></i>About Me</h3>

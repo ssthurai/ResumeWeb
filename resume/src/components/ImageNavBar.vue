@@ -68,18 +68,18 @@ export default {
   padding: 2px 5px 2px 5px;
   border-width: 0;
   border-radius: 10px;
-  background-color: rgba(135, 136, 140, 0.8);
   font-size: 1.2rem;
-  color: white;
+  font-weight: bold;
 }
 
 .title-tag {
   font-size: 1rem;
-  max-width: 10em;
-  padding: 2px 5px 2px 5px;
+  font-weight: bold;
+  color: white;
+  max-width: 12rem;
+  padding: 2px 6px 2px 6px;
   border-width: 0;
-  border-radius: 10px;
-  background-color: rgba(135, 136, 140, 0.5);
+  background-color: black;
   opacity: 0.9;
 }
 
@@ -87,25 +87,22 @@ export default {
   font-size: 1rem;
   margin-top: 3rem;
   margin-right: 1rem;
-  opacity: 0.8;
 }
 
 .image-nav-bar-container {
+  color: black;
   position: relative;
   top: 0;
 }
 
 .image-nav-bar-router-link {
-  padding: 2px 2px 0.5px 2px;
-  border-width: 0;
-  border-radius: 10px;
-  background-color: rgba(135, 136, 140, 0.4);
+  background-color: rgba(142, 142, 142, 0.65);
+  padding-top: 0.5rem;
   position: absolute;
   bottom: 0;
 }
 
 .image-nav-bar-title {
-  color: white;
   text-align: left;
   position: absolute;
   top: 0;
@@ -115,7 +112,7 @@ export default {
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 40% center;
+  background-position: 80% 15%;
 }
 
 .navImageFullHeight {

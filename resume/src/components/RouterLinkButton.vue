@@ -29,16 +29,17 @@ export default {
 .router-button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: black;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   font-size: 0.9rem;
+  font-weight: bold;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
 
 .router-button:hover {
-  color: black;
+  color: #939393;
 }
 
 .router-button-inline-block {

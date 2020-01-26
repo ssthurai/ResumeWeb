@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid m-0 p-0">
-      <div class="row justify-content-center text-center mx-auto">
+      <div class="row justify-content-center text-center ">
         <div
           class="main-container-style col-lg-10 col-sm-12 col-md-12 mb-4 mt-4 p-0"
         >
@@ -94,7 +94,7 @@ body.scrollable {
 }
 
 a {
-  color: #848484 !important;
+  color: #b2bad7 !important;
 }
 
 a:active,

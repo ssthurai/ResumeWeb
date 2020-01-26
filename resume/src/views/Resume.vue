@@ -5,7 +5,7 @@
       <div
         class="row justify-content-center align-items-center text-center mt-4 mb-2 p-0"
       >
-        <div class="col-4">
+        <div class="col-4 p-0 ml-0">
           <div class="resume-round-image">
             <img
               alt="resume_profile_pic"
@@ -13,7 +13,7 @@
             />
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-8 p-0 m-0">
           <div class="cool_title">
             <h5 class="fisrt-line">
               Programming is what I love,
@@ -28,8 +28,8 @@
 
     <!-- quote and download cv link -->
     <div class="quotation-and-download">
-      <div class="row justify-content-center align-items-center text-left mx-2">
-        <div class="col-12 mt-2 mb-2">
+      <div class="row justify-content-center align-items-center text-left ">
+        <div class="col-10 mt-5 mb-5">
           <p>
             {{ decodeHtml(leftQuotation) }} Programming can be as simple as
             putting compenents together and make sure they can run. I consider
@@ -37,16 +37,18 @@
             becoming an expert, Enthusiasm and the desire of becoming an expert
             is all you need. {{ decodeHtml(rightQuotation) }}
           </p>
+          <!--
           <button class="btn-color-dark float-right">
             DOWNLOAD CV
           </button>
+          -->
         </div>
       </div>
     </div>
 
     <!-- Education -->
     <div class="education mt-4">
-      <div class="row justify-content-center align-items-center text-left mx-2">
+      <div class="row justify-content-center align-items-center text-left ">
         <div class="col-12 mt-2 mb-2">
           <div class="section-title">Education</div>
           <hr />
@@ -54,7 +56,7 @@
       </div>
       <div
         class="row justify-content-center align-items-center
-      text-left carousel-sectionmx-2"
+      text-left carousel-section"
       >
         <div class="col-12">
           <carousel
@@ -116,7 +118,7 @@
 
     <!-- Experience -->
     <div class="experience mt-4">
-      <div class="row justify-content-center align-items-center text-left mx-2">
+      <div class="row justify-content-center align-items-center text-left ">
         <div class="col-12 mt-2 mb-2">
           <div class="section-title">Experience</div>
           <hr />
@@ -124,7 +126,7 @@
       </div>
       <div
         class="row justify-content-center align-items-center
-        text-left mx-2"
+        text-left "
       >
         <div class="col-12">
           <carousel
@@ -177,13 +179,146 @@
     </div>
 
     <!-- Skills -->
-    <div></div>
+    <div class="skills mt-4">
+      <div class="row justify-content-center align-items-center text-left">
+        <div class="col-12 mt-2 mb-2">
+          <div class="section-title">Skills</div>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="row justify-content-center align-items-center
+        text-left ml-3 mr-3"
+      >
+        <div class="col-12">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <i class="fas fa-brain mr-3"></i>
+              Decision Making
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-crosshairs mr-3"></i>
+              Critical Thinking
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-search mr-3"></i>
+              Problem-Solving
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-handshake mr-3"></i>
+              Teamwork
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <!-- Certificates -->
-    <div></div>
-
-    <!-- Hobbies -->
-    <div></div>
+    <!-- Programming Skills -->
+    <div class="programming-skills mt-4">
+      <div class="row justify-content-center align-items-center text-left">
+        <div class="col-12 mt-2 mb-2">
+          <div class="section-title">Programming Skills</div>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="row justify-content-center align-items-center
+        text-left "
+      >
+        <div class="col-12">
+          <carousel
+            v-bind:perPage="1"
+            v-bind:navigationEnabled="true"
+            v-bind:paginationEnabled="false"
+          >
+            <slide>
+              <div class="display-card">
+                <h6>ASP.NET</h6>
+                <p class="pt-1">
+                  Before using ASP.NET, I do not really know there are backend
+                  and frontend in web application development. I was reqested to
+                  maintained and extended a commercial applications. It was
+                  written in ASP.NET MVC Architecture. Besied this framework, I
+                  also got my hands on SQL Language.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>Ext. JS</h6>
+                <p class="pt-1">
+                  Company did not have its frontend developement team. Hence,
+                  developers need to write both the backend and frontend all by
+                  themselves. Jumping from C# to Javascript can be very
+                  confusing. Extended Javascript (Ext. JS) is a JS framework
+                  used mostly in commercial applications.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>SQL</h6>
+                <p class="pt-1">
+                  SQL is inevitable language in backend development. I had the
+                  chance to develope in both MySQL and SQL Server Database.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>Unity</h6>
+                <p class="pt-1">
+                  It has been awhile since my last use of Unity. It is the first
+                  the first framework that I used. I learnt Unity throught
+                  different means. I took some online courses on Udemy. I also
+                  attained live local class. At the end, I switched job and no
+                  longer get involved in Unity development. Yet, I often think
+                  about writing some mobile games.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>Pytorch</h6>
+                <p class="pt-1">
+                  Company wanted to develope some deep learning related
+                  applications. Hence, I tried to dive into the field of deep
+                  learning. I took a course higly rated by the community -
+                  fastai course. It recommended Pytorch as the way to go. I have
+                  implemented some image-processing tools with Pytorch.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>Django</h6>
+                <p class="pt-1">
+                  In fact, Python is the very first language that I code with. I
+                  really like the simplicity of Python. ASP.NET is good but not
+                  my personal favorite. I spent time learning how to write web
+                  applicatioin using Django. The experience was awesome.
+                  Planning to develope some Fintech application using Django.
+                </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h6>Vue JS</h6>
+                <p class="pt-1">
+                  Django is an awesome web development framework. But it is not
+                  powerful in frontend. So I started to look for a frontend
+                  framework. Vue seems to be a wise choice. Did not consider Ext
+                  JS because of its licence policy and community size. I love
+                  how Vue divides web components into Props. All things are well
+                  documented and easy to implement. Not to mention the large
+                  community.
+                </p>
+              </div>
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -209,8 +344,7 @@ export default {
 
 <style scoped>
 .resume-round-image img {
-  float: left;
-  margin-left: 1rem;
+  margin-left: 2rem;
   height: auto;
   width: auto;
   max-width: 15rem;
@@ -220,6 +354,7 @@ export default {
 }
 
 .cool_title .fisrt-line {
+  display: inline-block;
   width: 30rem;
   color: black;
   font-size: 2rem;
@@ -235,6 +370,69 @@ export default {
   font-size: 2rem;
   font-weight: bold;
   color: white;
+}
+
+@media only screen and (max-width: 770px) {
+  .resume-round-image img {
+    margin-left: 1.5rem;
+    height: auto;
+    width: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-width: thin;
+    border-radius: 50%;
+  }
+
+  .cool_title .fisrt-line {
+    display: inline-block;
+    width: 25rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .cool_title .second-line {
+    display: inline-block;
+    width: 20rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .resume-round-image img {
+    float: left;
+    margin-left: 2rem;
+    height: auto;
+    width: auto;
+    max-width: 5rem;
+    max-height: 5rem;
+    border-width: thin;
+    border-radius: 50%;
+  }
+
+  .cool_title .fisrt-line {
+    display: inline-block;
+    width: 13rem;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .cool_title .second-line {
+    display: inline-block;
+    width: 10rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+  }
 }
 
 .btn-color-dark {
@@ -257,6 +455,7 @@ export default {
 }
 
 .section-title {
+  margin-left: 1.5rem;
   color: white;
   display: inline-block;
   padding: 0.3rem;
@@ -276,5 +475,10 @@ export default {
 
 .display-card h6 {
   color: white;
+}
+
+.list-group-item {
+  background-color: transparent;
+  font-size: 1.2rem;
 }
 </style>

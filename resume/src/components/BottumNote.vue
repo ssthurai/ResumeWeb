@@ -3,14 +3,21 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 ml-1 mr-1">
             <h6>About this Website</h6>
             <p class="text-justify">
               This page is inspired by this
-              <a href="http://themes.pixelwars.org/unrovr/demo-03/">site</a>.
-              Yet all codes are written solely by developer - Hsuan Ting, Yeh.
-              This page is written using Vue.js framework and hosted by Github.
-              <a href="https://github.com/NoTiger/ResumeWeb">Source Code .</a>
+              <a href="http://themes.pixelwars.org/unrovr/demo-03/">
+                <strong>site</strong> </a
+              >. Yet all codes are written solely by developer - Hsuan Ting,
+              Yeh. This page is written using Vue.js framework and hosted by
+              Github.
+              <a href="https://github.com/NoTiger/ResumeWeb">
+                <strong>
+                  Source Code
+                </strong>
+              </a>
+              .
             </p>
           </div>
 
@@ -20,7 +27,6 @@
               <router-link to="/"><li>About Me</li></router-link>
               <router-link to="/resume"><li>Resume</li></router-link>
               <router-link to="/portfolio"><li>Portfolio</li></router-link>
-              <router-link to="/education"><li>Education</li></router-link>
             </ul>
           </div>
 
@@ -28,8 +34,13 @@
             <h6>Quick Links</h6>
             <ul class="bottum-note-links">
               <li><a href="https://github.com/NoTiger">My Github page</a></li>
+              <li>
+                <a href="https://github.com/NoTiger/ResumeWeb">Source Code</a>
+              </li>
               <router-link to="/contact"><li>Contact Me</li></router-link>
+              <!--
               <li><a href="https://github.com/NoTiger">Download Resume</a></li>
+              -->
             </ul>
           </div>
         </div>
@@ -37,27 +48,12 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
+          <div class="col-md-8 col-sm-6 col-xs-10 ml-1 mr-1">
             <p style="text-align: left;">
-              This Website is coded by Hsuan Ting, Yeh. Photo taken by
-              <a href="#">Grace Lau</a>.
+              This Website is written by Hsuan Ting, Yeh. Photos taken by
+              <a href="#"><strong>Grace Lau</strong></a
+              >.
             </p>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-network-icons">
-              <li>
-                <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a>
-              </li>
-              <li>
-                <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -136,68 +132,6 @@
   .site-footer .copyright-text,
   .site-footer .social-network-icons {
     text-align: center;
-  }
-}
-.social-network-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.social-network-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
-}
-.social-network-icons li.title {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
-}
-.social-network-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.social-network-icons a:active,
-.social-network-icons a:focus,
-.social-network-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
-}
-.social-network-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
-}
-.social-network-icons a.facebook:hover {
-  background-color: #3b5998;
-}
-.social-network-icons a.twitter:hover {
-  background-color: #00aced;
-}
-.social-network-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-.social-network-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-@media (max-width: 767px) {
-  .social-network-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600;
   }
 }
 </style>
