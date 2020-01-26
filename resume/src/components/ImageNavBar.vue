@@ -5,9 +5,9 @@
     v-bind:style="{ backgroundImage: `url(${navbarImageURL})` }"
   >
     <div class="image-nav-bar-title">
-      <div class="ml-4 mt-5">
-        <p class="name-tag">Steven Yeh</p>
-        <p class="title-tag">Developer / Dreamer</p>
+      <div class="ml-4 mt-4">
+        <p class="name-tag">Yeh Hsuan Ting</p>
+        <p class="title-tag ml-2">Developer / Dreamer</p>
         <div class="quote" v-if="!visited">
           <p>
             “So if you want to go fast, if you want to get done quickly,
@@ -80,14 +80,14 @@ export default {
   border-width: 0;
   border-radius: 10px;
   background-color: rgba(135, 136, 140, 0.5);
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 .quote {
   font-size: 1rem;
   margin-top: 3rem;
   margin-right: 1rem;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .image-nav-bar-container {
@@ -119,7 +119,7 @@ export default {
 }
 
 .navImageFullHeight {
-  height: 100vh;
+  height: 95vh;
   transition: height 0.7s ease-in-out;
   width: auto;
 }

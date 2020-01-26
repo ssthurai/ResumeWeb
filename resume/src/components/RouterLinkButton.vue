@@ -34,6 +34,11 @@ export default {
   margin-right: 0.3rem;
   font-size: 0.9rem;
   cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.router-button:hover {
+  color: black;
 }
 
 .router-button-inline-block {

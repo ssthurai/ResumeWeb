@@ -4,10 +4,9 @@ import router from "./router";
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import css file
 import "@fortawesome/fontawesome-free/css/all.css";
+import VueCarousel from "vue-carousel";
 
-// will be removed eventually
-//import animate from "animate.css";
-//Vue.use(animate);
+Vue.use(VueCarousel);
 
 Vue.config.productionTip = false;
 

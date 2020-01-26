@@ -14,7 +14,7 @@
             </p>
           </div>
 
-          <div class="col-xs-6 col-md-3 border-left">
+          <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="bottum-note-links">
               <router-link to="/"><li>About Me</li></router-link>
@@ -24,11 +24,12 @@
             </ul>
           </div>
 
-          <div class="col-xs-6 col-md-3 border-left">
+          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="bottum-note-links">
               <li><a href="https://github.com/NoTiger">My Github page</a></li>
               <router-link to="/contact"><li>Contact Me</li></router-link>
+              <li><a href="https://github.com/NoTiger">Download Resume</a></li>
             </ul>
           </div>
         </div>
@@ -70,7 +71,6 @@
   padding: 45px 0 20px;
   font-size: 0.9em;
   line-height: 24px;
-  color: #737373;
 }
 .site-footer hr {
   border-top-color: #bbb;
@@ -84,12 +84,14 @@
   letter-spacing: 2px;
 }
 .site-footer a {
-  color: #737373;
+  color: #9c9c9c !important;
 }
 .site-footer a:hover {
-  color: #3366cc;
+  color: #eaeaea;
   text-decoration: none;
+  font-size: 1.1rem;
 }
+
 .bottum-note-links {
   padding-left: 0;
   list-style: none;
@@ -97,13 +99,14 @@
 .bottum-note-links li {
   display: block;
 }
+
 .bottum-note-links a {
   color: #737373;
 }
 .bottum-note-links a:active,
 .bottum-note-links a:focus,
 .bottum-note-links a:hover {
-  color: #3366cc;
+  color: #eaeaea;
   text-decoration: none;
 }
 

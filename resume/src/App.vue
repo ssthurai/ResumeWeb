@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <div class="container-fluid p-0 mr-0 ml-0 mb-1 mt-1">
+    <div class="container-fluid m-0 p-0">
       <div class="row justify-content-center text-center mx-auto">
-        <div class="main-container-style col-lg-10 col-sm-12 col-md-12 m-0 p-0">
+        <div
+          class="main-container-style col-lg-10 col-sm-12 col-md-12 mb-4 mt-4 p-0"
+        >
           <ImageNavBar v-on:webVisited="showRouterView" />
           <transition name="switchRouterView" mode="out-in">
             <router-view v-if="isRouterView" />
@@ -56,14 +58,30 @@ html {
   padding: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
 #app {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #fbf1ea;
-}
-
-.main-container-style {
-  border: 1px solid black;
+  color: #848484;
+  background-color: #474750;
 }
 
 body.not-scrollable {
@@ -73,6 +91,22 @@ body.not-scrollable {
 body.scrollable {
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+a {
+  color: #848484 !important;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+  font-size: 1.1rem;
+}
+
+.main-container-style {
+  border: 2px solid black;
+  box-shadow: 8px 8px #28282b;
 }
 
 .switchRouterView-enter-active {
