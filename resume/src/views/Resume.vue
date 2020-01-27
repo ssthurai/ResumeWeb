@@ -29,7 +29,7 @@
     <!-- quote and download cv link -->
     <div class="quotation-and-download">
       <div class="row justify-content-center align-items-center text-left ">
-        <div class="col-10 mt-5 mb-5">
+        <div class="col-12 mt-2 mb-5">
           <p>
             {{ decodeHtml(leftQuotation) }} Programming can be as simple as
             putting compenents together and make sure they can run. I consider
@@ -37,11 +37,9 @@
             becoming an expert, Enthusiasm and the desire of becoming an expert
             is all you need. {{ decodeHtml(rightQuotation) }}
           </p>
-          <!--
           <button class="btn-color-dark float-right">
             DOWNLOAD CV
           </button>
-          -->
         </div>
       </div>
     </div>
@@ -54,32 +52,22 @@
           <hr />
         </div>
       </div>
-      <div
-        class="row justify-content-center align-items-center
-      text-left carousel-section"
-      >
+      <div class="row justify-content-center align-items-center text-left">
         <div class="col-12">
-          <carousel
-            v-bind:perPage="1"
-            v-bind:navigationEnabled="true"
-            v-bind:paginationEnabled="false"
-          >
+          <carousel v-bind:perPage="1">
             <slide>
               <div class="display-card">
-                <h5>2000 - 2003</h5>
-                <h6>Ren-Ai Elementary School</h6>
-                <p class="pt-1">Studied 3 years in Taipei, Taiwan.</p>
-              </div>
-            </slide>
-            <slide>
-              <div class="display-card">
-                <h5>2003 - 2006</h5>
-                <h6>S.K.H. Wei Lun Primary School</h6>
+                <h5>2012 - 2017</h5>
+                <h6>
+                  The Hong Kong Polytechnic University - Civil Engineering
+                  Degree
+                </h6>
                 <p class="pt-1">
-                  Started a new life in Hong Kong. I went through a lot of
-                  changes. Not to mention it was the time when SARS striked Hong
-                  Kong. It turned out great and I still hang out with my
-                  classmates back then.
+                  I got almost kicked out from University. Yet I somehow stood
+                  up again. I studied real hard and conquer all challenging
+                  Engineering courses. Now I never complain about study. It is
+                  always hard and exhuasting. It costed me almost a degree to
+                  learnt it.
                 </p>
               </div>
             </slide>
@@ -97,18 +85,21 @@
             </slide>
             <slide>
               <div class="display-card">
-                <h5>2012 - 2017</h5>
-                <h6>
-                  The Hong Kong Polytechnic University - Civil Engineering
-                  Degree
-                </h6>
+                <h5>2003 - 2006</h5>
+                <h6>S.K.H. Wei Lun Primary School</h6>
                 <p class="pt-1">
-                  I got almost kicked out from University. Yet I somehow stood
-                  up again. I studied real hard and conquer all challenging
-                  Engineering courses. Now I never complain about study. It is
-                  always hard and exhuasting. It costed me almost a degree to
-                  learnt it.
+                  Started a new life in Hong Kong. I went through a lot of
+                  changes. Not to mention it was the time when SARS striked Hong
+                  Kong. It turned out great and I still hang out with my
+                  classmates back then.
                 </p>
+              </div>
+            </slide>
+            <slide>
+              <div class="display-card">
+                <h5>2000 - 2003</h5>
+                <h6>Ren-Ai Elementary School</h6>
+                <p class="pt-1">Studied 3 years in Taipei, Taiwan.</p>
               </div>
             </slide>
           </carousel>
@@ -129,11 +120,7 @@
         text-left "
       >
         <div class="col-12">
-          <carousel
-            v-bind:perPage="1"
-            v-bind:navigationEnabled="true"
-            v-bind:paginationEnabled="false"
-          >
+          <carousel v-bind:perPage="1">
             <slide>
               <div class="display-card">
                 <h5>June, 2017 ~ May, 2018</h5>
@@ -226,11 +213,7 @@
         text-left "
       >
         <div class="col-12">
-          <carousel
-            v-bind:perPage="1"
-            v-bind:navigationEnabled="true"
-            v-bind:paginationEnabled="false"
-          >
+          <carousel v-bind:perPage="1">
             <slide>
               <div class="display-card">
                 <h6>ASP.NET</h6>
@@ -446,12 +429,6 @@ export default {
 .btn-color-dark:hover {
   color: black;
   transition: color 0.7s ease-in-out;
-}
-
-.carousel-section {
-  max-height: 10rem;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .section-title {

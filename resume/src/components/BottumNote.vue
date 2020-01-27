@@ -3,7 +3,7 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 ml-1 mr-1">
+          <div class="col-sm-12 col-md-6">
             <h6>About this Website</h6>
             <p class="text-justify">
               This page is inspired by this
