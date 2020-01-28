@@ -56,6 +56,7 @@ export default {
 html {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 /* width */
