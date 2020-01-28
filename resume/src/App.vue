@@ -3,7 +3,7 @@
     <div class="container-fluid m-0 p-0">
       <div class="row justify-content-center text-center ">
         <div
-          class="main-container-style col-lg-10 col-sm-12 col-md-12 mb-4 mt-4 p-0"
+          class="main-container-style col-lg-10 col-sm-12 col-md-12 mb-0 mt-0 p-0"
         >
           <ImageNavBar v-on:webVisited="showRouterView" />
           <transition name="switchRouterView" mode="out-in">
