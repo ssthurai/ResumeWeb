@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="image-nav-bar-router-link ml-4 mb-3" v-on:click="visitWeb">
+    <div class="image-nav-bar-router-link ml-4 mb-5" v-on:click="visitWeb">
       <router-link to="/">
         <RouterLinkButton iconCode="far fa-user" buttonText="About Me" />
       </router-link>
