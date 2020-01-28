@@ -3,7 +3,7 @@
     <div class="row justify-content-center text-left ">
       <div class="col-12 mt-4 mb-4 ml-1">
         <p class="section-title">Portfolio</p>
-        <div class="mt-4 ml-1 mr-1">
+        <div class="mt-4 ml-3 mr-1">
           <p>
             Here are some of my private projects. Most of my projects belong to
             the companies I once served. Those projects will not be shown here.
@@ -48,7 +48,7 @@
       </div>
       <div class="row justify-content-center text-left">
         <div class="col-12 mt-4 ml-1">
-          <p class="ml-2"><strong>Description:</strong></p>
+          <p class="ml-3"><strong>Description:</strong></p>
           <p class="ml-4 mr-1">
             This is my very first django project. Tried to learn and implement
             different features of django. I understood how poerful this
@@ -83,7 +83,7 @@
       </div>
       <div class="row justify-content-center text-left">
         <div class="col-12 mt-4 ml-1">
-          <p class="ml-2"><strong>Description:</strong></p>
+          <p class="ml-3"><strong>Description:</strong></p>
           <p class="ml-4 mr-1">
             Deep Learning is such a hot topic one cannot avoid. I am more
             curious on its theory and implementation. I took the fastai online
@@ -124,7 +124,7 @@
       </div>
       <div class="row justify-content-center text-left">
         <div class="col-12 mt-4 ml-1">
-          <p class="ml-2"><strong>Description:</strong></p>
+          <p class="ml-3"><strong>Description:</strong></p>
           <div class="ml-4 mr-1">
             <p>
               I hosted the website using
