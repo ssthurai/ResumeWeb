@@ -210,7 +210,7 @@
       </div>
       <div
         class="row justify-content-center align-items-center
-        text-left "
+        text-left"
       >
         <div class="col-12">
           <carousel v-bind:perPage="1">
@@ -302,6 +302,28 @@
         </div>
       </div>
     </div>
+
+    <!-- Certificates -->
+    <div class="certificates mt-4">
+      <div class="row justify-content-center align-items-center text-left">
+        <div class="col-12 mt-2 mb-2">
+          <div class="section-title">Certificates</div>
+          <hr />
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-12 mt-2 ">
+          <carousel v-bind:perPage="1" v-bind:centerMode="true">
+            <slide
+              v-for="(url, index) in certificateImageUrls"
+              v-bind:key="index"
+            >
+              <img class="img-fluid img-max" v-bind:src="url" />
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -312,7 +334,11 @@ export default {
   data: function() {
     return {
       leftQuotation: "&#8220",
-      rightQuotation: "&#8221"
+      rightQuotation: "&#8221",
+      certificateImageUrls: [
+        require("@/assets/images/certificates/pic1.png"),
+        require("@/assets/images/certificates/pic2.png")
+      ]
     };
   },
   methods: {
@@ -457,5 +483,10 @@ export default {
 .list-group-item {
   background-color: transparent;
   font-size: 1.2rem;
+}
+
+.img-max {
+  max-height: 15rem;
+  height: 100%;
 }
 </style>

@@ -51,7 +51,8 @@
           <div class="col-md-8 col-sm-6 col-xs-10 ml-1 mr-1">
             <p style="text-align: left;">
               This Website is written by Hsuan Ting, Yeh. Photos taken by
-              <a href="#"><strong>Grace Lau</strong></a
+              <a href="https://www.instagram.com/spreadyourmagicc/"
+                ><strong>Grace Lau</strong></a
               >.
             </p>
           </div>
