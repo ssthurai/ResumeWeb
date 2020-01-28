@@ -29,7 +29,7 @@
     <!-- quote and download cv link -->
     <div class="quotation-and-download">
       <div class="row justify-content-center align-items-center text-left ">
-        <div class="col-12 mt-2 mb-5 ml-3">
+        <div class="col-12 mt-2 mb-5 ml-5 mr-1">
           <p>
             {{ decodeHtml(leftQuotation) }} Programming can be as simple as
             putting compenents together and make sure they can run. I consider
