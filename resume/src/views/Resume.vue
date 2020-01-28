@@ -37,9 +37,11 @@
             becoming an expert, Enthusiasm and the desire of becoming an expert
             is all you need. {{ decodeHtml(rightQuotation) }}
           </p>
+          <!--
           <button class="btn-color-dark float-right">
             DOWNLOAD CV
           </button>
+          -->
         </div>
       </div>
     </div>
