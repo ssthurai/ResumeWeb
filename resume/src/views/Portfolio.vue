@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid p-0 m-0">
     <div class="row justify-content-center text-left ">
       <div class="col-12 mt-4 mb-4 ml-1">
         <p class="section-title">Portfolio</p>

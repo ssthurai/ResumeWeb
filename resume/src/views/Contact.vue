@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid p-0 m-0">
     <div class="row justify-content-center text-center mt-4 mb-2">
       <div class="col-10">
         <div class="contact-card">

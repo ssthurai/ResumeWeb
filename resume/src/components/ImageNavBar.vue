@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="image-nav-bar-router-link ml-4 mb-5" v-on:click="visitWeb">
+    <div class="image-nav-bar-router-link ml-4 mb-4" v-on:click="visitWeb">
       <router-link to="/">
         <RouterLinkButton iconCode="far fa-user" buttonText="About Me" />
       </router-link>
@@ -97,7 +97,6 @@ export default {
 
 .image-nav-bar-router-link {
   background-color: rgba(142, 142, 142, 0.65);
-  padding-top: 0.5rem;
   position: absolute;
   bottom: 0;
 }
@@ -110,19 +109,20 @@ export default {
 
 .image-nav-bar {
   margin: 0 auto;
+  padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% 15%;
 }
 
 .navImageFullHeight {
-  height: 95vh;
+  height: 100vh;
   transition: height 0.7s ease-in-out;
   width: auto;
 }
 
 .navImage {
-  height: 50vh;
+  height: 65vh;
   transition: height 0.7s ease-in-out;
   width: auto;
 }
