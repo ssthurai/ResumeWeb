@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer class="site-footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About this Website</h6>
@@ -46,7 +46,7 @@
         </div>
         <hr />
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-10 ml-1 mr-1">
             <p style="text-align: left;">

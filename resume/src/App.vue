@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <div class="container-fluid m-0 p-0">
-      <div class="row justify-content-center text-center ">
-        <div class="main-container-style col-lg-10 col-sm-12 col-md-12 m-0 p-0">
-          <ImageNavBar v-on:webVisited="showRouterView" />
-          <transition name="switchRouterView" mode="out-in">
-            <router-view v-if="isRouterView" />
-          </transition>
-          <BottumNote v-if="isRouterView" />
-        </div>
+  <div id="app" class="container-fluid p-0 m-0">
+    <div class="row justify-content-center text-center">
+      <div
+        class="main-container-style col-lg-10 col-md-12 col-sm-12 col-xs-12 m-0 p-0"
+      >
+        <ImageNavBar v-on:webVisited="showRouterView" />
+        <transition name="switchRouterView" mode="out-in">
+          <router-view v-if="isRouterView" />
+        </transition>
+        <BottumNote v-if="isRouterView" />
       </div>
     </div>
   </div>
@@ -50,6 +50,18 @@ export default {
 </script>
 
 <style>
+/*
+  Padding fix margin fix
+*/
+
+.row {
+  margin: 0 !important;
+}
+
+/*
+  Padding fix margin fix
+*/
+
 *,
 html {
   margin: 0;
@@ -109,7 +121,6 @@ a:hover {
 
 .main-container-style {
   border: 2px solid black;
-  box-shadow: 8px 8px #28282b;
 }
 
 .switchRouterView-enter-active {

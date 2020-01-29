@@ -85,8 +85,10 @@ export default {
 
 .quote {
   font-size: 1rem;
-  margin-top: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
   margin-right: 1rem;
+  color: #808080;
 }
 
 .image-nav-bar-container {
