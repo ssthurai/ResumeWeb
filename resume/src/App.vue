@@ -100,7 +100,7 @@ button:focus {
 }
 
 body.not-scrollable {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body.scrollable {

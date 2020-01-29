@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid p-0 m-0">
-    <div class="row justify-content-center text-center mt-4 mb-2">
+  <div class="container-fluid p-0 m-0 mt-4">
+    <div class="row justify-content-center text-center mb-2">
       <div class="col-10">
         <div class="contact-card">
           <h5><i class="fas fa-phone-alt"></i> Telephone</h5>
