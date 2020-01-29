@@ -356,6 +356,7 @@ export default {
 <style scoped>
 .resume-round-image img {
   margin-left: 2rem;
+  margin-top: 1rem;
   height: auto;
   width: auto;
   max-width: 15rem;
