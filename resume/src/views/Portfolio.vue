@@ -26,8 +26,8 @@
             </li>
             <li class="list-group-item">
               <i class="far fa-hand-point-right mr-3"></i>
-              <a href="#https://github.com/NoTiger/ResumeWeb"
-                >This Resume Web</a
+              <a href="https://github.com/NoTiger/ResumeWeb"
+                >This self-introduction web</a
               >
             </li>
             <li class="list-group-item">
