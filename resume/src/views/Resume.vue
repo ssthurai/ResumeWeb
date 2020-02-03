@@ -125,21 +125,25 @@
           <carousel v-bind:perPage="1">
             <slide>
               <div class="display-card">
-                <h5>June, 2017 ~ May, 2018</h5>
-                <h6>Alternative civilian service</h6>
+                <h5>October, 2018 ~ Now</h5>
+                <h6>Software Developer in Software Island Inc.</h6>
                 <p class="pt-1">
-                  Unable to fulfill military service due to my physical
-                  condition. Complete my civil duty by contributing for the
-                  police deparment in Taiwan. It has been a tough year. Yet, I
-                  spent my weekend attending private academy of programming.
-                  Fell in love with code instantly.
+                  With my previsous experience, I officially entered the
+                  software industry. In Software Island, I not only maintained
+                  pre-existing program but had the chance to develope new
+                  application. I learnt to write bacnkend (ASP.NET & SQL),
+                  frontend (Extended JS) and Desktop(.Net WinForm) Applications.
+                  It has been a fruitful journey
                 </p>
               </div>
             </slide>
             <slide>
               <div class="display-card">
                 <h5>June, 2018 ~ September, 2018</h5>
-                <h6>Research Assitant in Tamkang University</h6>
+                <h6>
+                  Research Assitant in Taiwan-Malaysia Digital Technology
+                  International Centre (DiTIC)
+                </h6>
                 <p class="pt-1">
                   It is rather difficult trying to enter the software industry
                   without a relevent degree. I got a chance in Tamkung
@@ -150,15 +154,14 @@
             </slide>
             <slide>
               <div class="display-card">
-                <h5>October, 2018 ~ Now</h5>
-                <h6>Software Developer in Software Island Inc.</h6>
+                <h5>June, 2017 ~ May, 2018</h5>
+                <h6>Alternative civilian service</h6>
                 <p class="pt-1">
-                  With my previsous experience, I officially entered the
-                  software industry. In Software Island, I not only maintained
-                  pre-existing program but had the chance to develope new
-                  application. I learnt to write bacnkend (ASP.NET & SQL),
-                  frontend (Extended JS) and Desktop(.Net WinForm) Applications.
-                  It has been a fruitful journey
+                  Unable to fulfill military service due to my physical
+                  condition. Complete my civil duty by contributing for the
+                  police deparment in Taiwan. It has been a tough year. Yet, I
+                  spent my weekend attending private academy of programming.
+                  Fell in love with code instantly.
                 </p>
               </div>
             </slide>

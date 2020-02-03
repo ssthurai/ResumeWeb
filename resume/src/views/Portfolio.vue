@@ -5,38 +5,183 @@
         <p class="section-title">Portfolio</p>
         <div class="mt-4 ml-3 mr-1">
           <p>
-            Here are some of my private projects. Most of my projects belong to
-            the companies I once served. Those projects will not be shown here.
-            Not all my acquired skills are going to show here (e.g. ASP.NET).
+            I will share my work projects and private projects here. Please take
+            a look to learn more about my past project experience.
           </p>
-          <ul class="list-group list-group-flush mt-2">
-            <li class="list-group-item">
-              <i class="far fa-hand-point-right mr-3"></i>
-              <a href="#first-django-project">Company Website (Demo)</a>
-            </li>
-            <li class="list-group-item">
-              <i class="far fa-hand-point-right mr-3"></i>
-              <a href="#deep-learning"
-                >Deep Learning Notes and Implementation</a
-              >
-            </li>
-            <li class="list-group-item">
-              <i class="far fa-hand-point-right mr-3"></i>
-              <a href="#vue-django">Vue + Django</a>
-            </li>
-            <li class="list-group-item">
-              <i class="far fa-hand-point-right mr-3"></i>
-              <a href="https://github.com/NoTiger/ResumeWeb"
-                >This self-introduction web</a
-              >
-            </li>
-            <li class="list-group-item">
-              <i class="far fa-hand-point-right mr-3"></i>
-              <a href="#learning">My Next Step</a>
-            </li>
-          </ul>
+          <br />
+
+          <div id="private-project-list">
+            <ul class="list-group list-group-flush">
+              <h5 class="ml-2">Private Projects</h5>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="#first-django-project">Company Website (Demo)</a>
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="#deep-learning"
+                  >Deep Learning Notes and Implementation</a
+                >
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="#vue-django">Vue + Django</a>
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="https://github.com/NoTiger/ResumeWeb"
+                  >This self-introduction web</a
+                >
+              </li>
+            </ul>
+          </div>
+          <br />
+
+          <div id="commercial-project-list">
+            <ul class="list-group list-group-flush">
+              <h5 class="ml-2">Company Projects</h5>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="#software-island">In Software Island</a>
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-hand-point-right mr-3"></i>
+                <a href="#ditic"
+                  >In Taiwan-Malaysia Digital Technology International Centre
+                  (DiTIC)</a
+                >
+              </li>
+            </ul>
+          </div>
+          <br />
         </div>
       </div>
+    </div>
+
+    <!-- software-island -->
+    <div id="software-island">
+      <div class="row justify-content-center text-left">
+        <div class="col-12 mt-4 ml-1">
+          <p class="section-title">
+            Software Island (Taiwan) Limited Taiwan Branch
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-left">
+        <div class="col-12 mt-4 ml-1">
+          <div class="ml-4 mr-1">
+            <p><strong class="mr-2">Post：</strong> Software Developer</p>
+            <p><strong class="mr-2">Subordinate staff: </strong> 1 person</p>
+            <p>
+              <strong class="mr-2">Report to: </strong> Research & Development
+              Head
+            </p>
+            <br />
+            <p><strong>Tasks: </strong></p>
+            <ul class="ml-5">
+              <li>
+                <p>Interview and train junior</p>
+              </li>
+              <li>
+                <p>Discuss software requirements with client</p>
+              </li>
+              <li>
+                <p>On site repair and maintenance</p>
+              </li>
+              <li>
+                <p>Ｃ＃.NET Windowform development and maintenance</p>
+              </li>
+              <li>
+                <p>Ｃ＃.NET Service maintenance</p>
+              </li>
+              <li>
+                <p>ASP.NET(MVC) development and maintenance</p>
+              </li>
+              <li>
+                <p>Ext.js SPA development and maintenance</p>
+              </li>
+              <li>
+                <p>Python AI module development and maintenance</p>
+              </li>
+              <li>
+                <p>
+                  Python AI automation tools development for IT department
+                  (PyQT5 UI)
+                </p>
+              </li>
+              <li>
+                <p>Python database mass data stimulator</p>
+              </li>
+            </ul>
+            <br />
+            <p><strong>Projects: </strong></p>
+            <ul class="ml-5">
+              <li>
+                <p>
+                  Enterprise level documents management and safety application
+                </p>
+              </li>
+              <li>
+                <p>Ｗindow document related desktop application</p>
+              </li>
+              <li>
+                <p>Enterprise level cloud-based files management application</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <a href="#">To Top</a>
+    </div>
+
+    <!-- ditic -->
+    <div id="ditic">
+      <div class="row justify-content-center text-left">
+        <div class="col-12 mt-4 ml-1">
+          <p class="section-title">
+            Taiwan-Malaysia Digital Technology International Centre
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-left">
+        <div class="col-12 mt-4 ml-1">
+          <div class="ml-4 mr-1">
+            <p><strong class="mr-2">Post：</strong> Software Developer</p>
+            <p><strong class="mr-2">Subordinate staff: </strong> None</p>
+            <p>
+              <strong class="mr-2">Report to: </strong> Project leading
+              professor
+            </p>
+            <br />
+            <p><strong>Tasks: </strong></p>
+            <ul class="ml-5">
+              <li>
+                <p>Develop Unity VR application</p>
+              </li>
+              <li>
+                <p>
+                  Explain and report application plan and progress to clients
+                </p>
+              </li>
+              <li>
+                <p>
+                  Produce art resources by cooperating with 3D models developer
+                </p>
+              </li>
+            </ul>
+            <br />
+            <p><strong>Projects: </strong></p>
+            <ul class="ml-5">
+              <li>
+                <p>Tourism & Education VR application</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <a href="#">To Top</a>
     </div>
 
     <!-- First Django Project -->
@@ -72,6 +217,8 @@
           </carousel>
         </div>
       </div>
+      <br />
+      <a href="#">To Top</a>
     </div>
 
     <!-- DeepLearning -->
@@ -113,6 +260,8 @@
           </carousel>
         </div>
       </div>
+      <br />
+      <a href="#">To Top</a>
     </div>
 
     <!-- Vue + Django -->
@@ -156,6 +305,8 @@
           </carousel>
         </div>
       </div>
+      <br />
+      <a href="#">To Top</a>
     </div>
 
     <!-- Learning -->
@@ -178,6 +329,8 @@
           </div>
         </div>
       </div>
+      <br />
+      <a href="#">To Top</a>
     </div>
   </div>
 </template>

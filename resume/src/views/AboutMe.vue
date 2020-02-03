@@ -79,7 +79,9 @@
           </li>
           <li class="list-group-item">
             <i class="fas fa-genderless mr-3"></i>
-            <a class="link" href="#">Portfolio</a>
+            <router-link to="/portfolio">
+              <a class="link">Portfolio</a>
+            </router-link>
           </li>
         </ul>
       </div>
