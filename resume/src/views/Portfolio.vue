@@ -110,7 +110,7 @@
                 </p>
               </li>
               <li>
-                <p>Python database mass data stimulator</p>
+                <p>Python database mass data simulator</p>
               </li>
             </ul>
             <br />

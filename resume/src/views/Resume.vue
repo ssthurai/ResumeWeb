@@ -101,7 +101,10 @@
               <div class="display-card">
                 <h5>2000 - 2003</h5>
                 <h6>Ren-Ai Elementary School</h6>
-                <p class="pt-1">Studied 3 years in Taipei, Taiwan.</p>
+                <p class="pt-1">
+                  Studied 3 years in Taipei, Taiwan. Had a lot of good memories
+                  in Taiwan.
+                </p>
               </div>
             </slide>
           </carousel>
